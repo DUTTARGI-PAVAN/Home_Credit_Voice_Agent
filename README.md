@@ -30,6 +30,18 @@ Note: variables are written as {{variable}}. On Bolna, if single braces {variabl
 
 5. Test Scenarios
 #	Scenario	Expected	Result	Audio	Transcript
+| 1 | Perfect eligible customer (commercial, sole, originals available, ₹50 lakh, salaried, bank income, ₹2 crore, 15 years) | Handoff to senior expert | Pass: all 7 items collected, handed off | 01_eligible.mp3 | Doc: Test 1 |
+| 2 | Existing loan on property (mentioned mid-flow) | Transfer specialist, end call | Pass: transfer message given, call ended | 02_existing_loan.mp3 | Doc: Test 2 |
+| 3 | No original documents (industrial, joint with brother) | Immediate disqualification | Pass: disqualified right after the answer | 03_no_originals.mp3 | Doc: Test 3 |
+| 4 | Busy customer | Ask callback time, no pitch, end | Incomplete: transcript ends before the agent replies | 04_busy.mp3 | Doc: Test 4 |
+| 5 | Agricultural property | Immediate disqualification | Pending | 05_agricultural.mp3 | 05_agricultural.txt |
+| 6 | Cash income | Immediate disqualification | Pending | 06_cash_income.mp3 | 06_cash_income.txt |
+| 7 | Tenure 2 years | Disqualification | Pending | 07_tenure_short.mp3 | 07_tenure_short.txt |
+| 8 | Tenure 20 years | Disqualification | Pending | 08_tenure_long.mp3 | 08_tenure_long.txt |
+| 9 | Loan ₹90 lakh | Offers ₹75 lakh, asks to proceed | Pending | 09_over_cap.mp3 | 09_over_cap.txt |
+| 10 | EMI reduction request | Transfer specialist, end call | Pending | 10_emi_reduction.mp3 | 10_emi_reduction.txt |
+| 11 | Out-of-order answers | No re-asking, next missing item | Pending | 11_out_of_order.mp3 | 11_out_of_order.txt |
+| 12 | Joint ownership (eligible) | Continues, not rejected | Pending | 12_joint.mp3 | 12_joint.txt |
 
 
 Adversarial (optional): self-correction, multiple answers at once, interruption, vague answer, interest-rate question, wrong person.
